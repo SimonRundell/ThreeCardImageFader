@@ -1,0 +1,9 @@
+{
+  "images": [
+    "/placeholders/placeholder1.svg",
+    "/placeholders/placeholder2.svg",
+    "/placeholders/placeholder3.svg"
+  ],
+  "INTERVAL_MS": 4000,
+  "FADE_MS": 2000
+}

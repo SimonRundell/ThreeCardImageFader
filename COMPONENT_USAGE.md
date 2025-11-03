@@ -144,6 +144,23 @@ Each card maintains two image layers for smooth crossfading:
 />
 ```
 
+### Sample JSON and placeholders
+
+This package includes a sample config and three SVG placeholder images for quick demos:
+
+- `public/images.sample.json`
+- `public/placeholders/placeholder1.svg`
+- `public/placeholders/placeholder2.svg`
+- `public/placeholders/placeholder3.svg`
+
+Copy the sample to use it immediately in dev:
+
+```powershell
+Copy-Item public/images.sample.json public/images.json -Force
+```
+
+Then run your dev server and you’ll see the fader with placeholder graphics.
+
 ## JSON Config Format
 
 ### Full format (recommended)

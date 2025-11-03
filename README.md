@@ -1,6 +1,6 @@
 # Three-Card Image Fader (Vite + React)
 
-A React component that displays three side-by-side image cards (each ~33% of the viewport width) with continuous random crossfade transitions. One random card fades to a new, randomly selected image at regular intervals, creating an engaging slideshow effect.
+A React component that displays three side-by-side image cards (each ~33% of the viewport width) with continuous random crossfade transitions. One random card fades to a new, randomly selected image at regular intervals, creating an engaging slideshow effect. 
 
 ## Author
 
@@ -30,7 +30,12 @@ public/
     └── image_13.png
 ```
 
-Configure `public/images.json`:
+Configure `public/images.json` (you can start by copying the sample):
+```powershell
+Copy-Item public/images.sample.json public/images.json -Force
+```
+
+Then edit `public/images.json` as needed:
 ```json
 {
   "images": [
