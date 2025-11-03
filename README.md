@@ -18,6 +18,23 @@ Simon Rundell (simon@codemonkey.design)
 
 ## Quick Start
 
+### Install from npm (after publish)
+
+```powershell
+npm install three-card-image-fader
+```
+
+Minimal usage in your app:
+
+```jsx
+import ThreeCardImageFader from 'three-card-image-fader';
+import 'three-card-image-fader/dist/three-card-image-fader.css';
+
+export default function App() {
+  return <ThreeCardImageFader configSource="/images.json" style={{ height: '60vh' }} />;
+}
+```
+
 ### 1. Setup
 
 Place your images in the `public/slideshow/` folder:
@@ -244,6 +261,46 @@ This component is designed to be reusable in any React project. See **[COMPONENT
 - Advanced usage examples
 - JSDoc reference
 - Troubleshooting guide
+
+### Install from npm (after publish)
+
+Install the package in your app:
+
+```powershell
+npm install three-card-image-fader
+```
+
+Import the component and its CSS, then use it:
+
+```jsx
+import ThreeCardImageFader from 'three-card-image-fader';
+import 'three-card-image-fader/dist/three-card-image-fader.css';
+
+export default function Hero() {
+  return (
+    <ThreeCardImageFader 
+      configSource="/images.json" 
+      defaultIntervalMs={5000}
+      defaultFadeMs={3000}
+      style={{ height: '60vh' }}
+    />
+  );
+}
+```
+
+Provide a JSON config in your public folder (or any reachable URL):
+
+```json
+{
+  "images": [
+    "/placeholders/placeholder1.svg",
+    "/placeholders/placeholder2.svg",
+    "/placeholders/placeholder3.svg"
+  ],
+  "INTERVAL_MS": 5000,
+  "FADE_MS": 3000
+}
+```
 
 ### Quick Integration
 
