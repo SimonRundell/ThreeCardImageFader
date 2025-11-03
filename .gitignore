@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+# Ignore all files in public/slideshow (do not commit images)
+/public/slideshow/
+/public/slideshow/**
+!/public/slideshow/.gitkeep
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
