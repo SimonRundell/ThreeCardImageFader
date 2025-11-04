@@ -87,7 +87,7 @@ Each card maintains two image layers for smooth crossfading:
 2. Update `package.json` to include:
    ```json
    {
-     "name": "@yourscope/three-card-image-fader",
+     "name": "@simonrundell/three-card-image-fader",
      "version": "1.0.0",
      "main": "index.js",
      "peerDependencies": {
